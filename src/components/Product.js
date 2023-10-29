@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import styled from "styled-components";
 
 export default class Product extends Component {
+  constructor(props) {
+    super();
+  }
   render() {
     return (
       <ProductFrame>
@@ -27,9 +30,17 @@ const ProductFrame = styled.div`
   flex-direction: column;
 `;
 
+const ProductImage = styled.img`
+  width: 100px;
+  height: 110px;
+  border-radius: 25px;
+  margin-left: 25px;
+  margin-top: 5px;
+`;
+
 const ProductImageWrapper = styled.div`
-  width: 100%;
-  height: 100%;
+  width: 100px;
+  height: 120px;
   border-radius: 25px;
 `;
 
